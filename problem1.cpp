@@ -39,7 +39,6 @@ int main() {
         cout << "Astronot " << nomor_tereliminasi << " dieliminasi." << endl;
         sisa--;
 
-        // Update nilai K sesuai aturan
         if (nomor_tereliminasi % 2 == 0) {
             K += 2;
         } else {
@@ -50,7 +49,6 @@ int main() {
             K = 2;
         }
 
-        // Cari astronot aktif berikutnya
         if (sisa > 1) {
             do {
                 idx = (idx + 1) % N;
